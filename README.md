@@ -138,7 +138,7 @@ The mechanical tells are AI vocabulary, filler, stock openers, "serves as", "not
 uv run --with pytest==8.3.4 --with pysbd==0.3.4 --with httpx==0.28.1 pytest -q test_check.py
 ```
 
-The website, [jpessay.com](https://jpessay.com/), is `docs/`, served by GitHub Pages.
+The website, [jpessay.com](https://jpessay.com/), is `docs/`, deployed on Vercel.
 
 ## Credits
 
