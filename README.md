@@ -150,7 +150,7 @@ npm test   # the npx installer
 
 Publishing a GitHub release publishes the package to npm (`.github/workflows/publish.yml`).
 
-The website, [jpessay.com](https://jpessay.com/), is `docs/`, served by GitHub Pages.
+The website, [jpessay.com](https://jpessay.com/), is `docs/`, deployed on Vercel.
 
 ## Credits
 
