@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f3ec">
   <title>jp-essay — Don't settle for the first draft.</title>
-  <meta name="description" content="A Claude Code skill that turns a question into a researched, rewritten, and reviewed essay. Ten steps. Ten checked gates. Meet jp-essay.">
+  <meta name="description" content="A Claude Code skill that turns a question into a researched, rewritten, and reviewed essay. A fresh reader, focused revisions, and a separate fact-check. Meet jp-essay.">
   <meta property="og:title" content="jp-essay — Don't settle for the first draft.">
-  <meta property="og:description" content="Ten steps. Ten gates. One question, properly answered. A skill for Claude Code.">
-  <meta property="og:image" content="https://jp-essay.blushmochi1027.chatgpt.site/assets/icon.png">
-  <meta property="og:url" content="https://jp-essay.blushmochi1027.chatgpt.site/">
+  <meta property="og:description" content="Research, draft, recall, revise, and fact-check. One question, properly answered. A skill for Claude Code.">
+  <meta property="og:image" content="https://jpessay.com/assets/icon.png">
+  <meta property="og:url" content="https://jpessay.com/">
   <meta property="og:type" content="website">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css?v=nav-dark-top-1">
-  <script src="/app.js?v=nav-dark-top-1" defer></script>
+  <link rel="stylesheet" href="/styles.css?v=current-method-2">
+  <script src="/app.js?v=current-method-2" defer></script>
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="nav" data-theme="dark">
     <div class="wrap nav-inner">
-      <a class="wordmark" href="#" aria-label="jp-essay, home"><span class="mark" aria-hidden="true">jp.</span> jp-essay<span class="version">v0.1</span></a>
+      <a class="wordmark" href="#" aria-label="jp-essay, home"><span class="mark" aria-hidden="true">jp.</span> jp-essay</a>
       <nav aria-label="Main navigation"><a href="#method">The method</a><a href="#files">What you get</a><a href="#install">Installation</a></nav>
       <div class="nav-actions">
-        <a class="github-link" href="https://github.com/lucasbabur/jp-essay" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span class="github-label">GitHub</span><span class="github-stars" aria-label="1 star on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.3.9-4.6 4.4 1.1 6.3-5.6-3-5.6 3 1.1-6.3L2.9 9.6l6.3-.9Z"/></svg><span id="github-star-count">1</span></span></a>
+        <a class="github-link" href="https://github.com/lucasbabur/jp-essay" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span class="github-label">GitHub</span><span class="github-stars" aria-label="GitHub star count loading"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.3.9-4.6 4.4 1.1 6.3-5.6-3-5.6 3 1.1-6.3L2.9 9.6l6.3-.9Z"/></svg><span id="github-star-count">—</span></span></a>
         <a class="nav-download" href="#install">Download <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
@@ -91,7 +91,6 @@
           <g class="writer-writing"><image href="/assets/icon.png" width="1024" height="1024" clip-path="url(#writer-writing-clip)"/></g>
           </g>
         </svg>
-        <div class="paper-note"><span class="paper-number">10</span><div><strong>steps.<br>No shortcuts.</strong><span>A gate checks every step.</span></div></div>
       </figure>
     </section>
 
@@ -100,7 +99,7 @@
     <section class="method" id="method" aria-labelledby="method-title">
       <div class="method-pulse" aria-hidden="true"><i class="method-pulse-wash"></i><span></span><span></span><span></span></div>
       <div class="wrap">
-        <div class="section-label"><span>02 — THE METHOD</span><span>TEN STEPS. TEN GATES.</span></div>
+        <div class="section-label"><span>02 — THE METHOD</span><span>NINE STEPS. ONE CONSIDERED ESSAY.</span></div>
         <div class="method-intro"><h2 id="method-title">The quality is<br><em>in the process.</em></h2></div>
         <div class="process-grid">
           <div class="step-list" role="tablist" aria-label="Steps in the process" aria-orientation="vertical">
@@ -108,20 +107,19 @@
             <button role="tab" id="step-1" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="1"><span>02</span> Reading and sources <span aria-hidden="true">↗</span></button>
             <button role="tab" id="step-2" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="2"><span>03</span> Outline the argument <span aria-hidden="true">↗</span></button>
             <button role="tab" id="step-3" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="3"><span>04</span> The first draft <span aria-hidden="true">↗</span></button>
-            <button role="tab" id="step-4" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="4"><span>05</span> Rewrite, for real <span aria-hidden="true">↗</span></button>
-            <button role="tab" id="step-5" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="5"><span>06</span> Find the order <span aria-hidden="true">↗</span></button>
-            <button role="tab" id="step-6" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="6"><span>07</span> Rebuild from memory <span aria-hidden="true">↗</span></button>
-            <button role="tab" id="step-7" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="7"><span>08</span> Write it again <span aria-hidden="true">↗</span></button>
-            <button role="tab" id="step-8" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="8"><span>09</span> One more critique <span aria-hidden="true">↗</span></button>
-            <button role="tab" id="step-9" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="9"><span>10</span> The final form <span aria-hidden="true">↗</span></button>
+            <button role="tab" id="step-4" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="4"><span>05</span> Read from memory <span aria-hidden="true">↗</span></button>
+            <button role="tab" id="step-5" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="5"><span>06</span> Rebuild and reorder <span aria-hidden="true">↗</span></button>
+            <button role="tab" id="step-6" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="6"><span>07</span> Rewrite with purpose <span aria-hidden="true">↗</span></button>
+            <button role="tab" id="step-7" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="7"><span>08</span> Check the facts <span aria-hidden="true">↗</span></button>
+            <button role="tab" id="step-8" aria-controls="step-panel" aria-selected="false" tabindex="-1" data-step="8"><span>09</span> One last reading <span aria-hidden="true">↗</span></button>
           </div>
           <div class="step-panel-shell">
           <div class="step-panel" id="step-panel" role="tabpanel" tabindex="0" aria-labelledby="step-0">
-            <div class="panel-meta"><span id="step-category">BEFORE WRITING</span><span id="step-counter">01 / 10</span></div>
+            <div class="panel-meta"><span id="step-category">BEFORE WRITING</span><span id="step-counter">01 / 09</span></div>
             <span class="large-step" id="large-step" aria-hidden="true">01</span>
             <h3 id="step-title">Start with<br>a better question.</h3>
-            <p id="step-description">A topic is broad. A question gives it direction. You confirm the question your essay will answer, the word count, the language, and the citation style.</p>
-            <div class="gate"><div><span class="gate-dot" aria-hidden="true"></span> GATE <code id="gate-name">question</code></div><p id="gate-description">Checks all four fields, the question, and the minimum length of 1,000 words.</p></div>
+            <p id="step-description">You confirm the question, who will read the essay, the word count, and the language. The reader's knowledge shapes what the essay needs to explain.</p>
+            <div class="gate"><div><span class="gate-dot" aria-hidden="true"></span> GATE <code id="gate-name">question</code></div><p id="gate-description">Checks the question, reader, language, and a target of at least 500 words.</p></div>
             <div class="panel-bottom"><span>OUTPUT FILE</span><code id="step-file">question.md</code></div>
           </div>
           </div>
@@ -149,21 +147,21 @@
         <div class="workspace-content"><div class="file-list" role="tablist" aria-label="File previews" aria-orientation="vertical">
           <button role="tab" id="file-tab-0" aria-selected="true" aria-controls="file-panel" data-file="0"><span aria-hidden="true">▤</span> question.md <span class="file-stage">01</span></button>
           <button role="tab" id="file-tab-1" aria-selected="false" aria-controls="file-panel" tabindex="-1" data-file="1"><span aria-hidden="true">▤</span> sources.md <span class="file-stage">02</span></button>
-          <button role="tab" id="file-tab-2" aria-selected="false" aria-controls="file-panel" tabindex="-1" data-file="2"><span aria-hidden="true">▤</span> rewrites/01.md <span class="file-stage">05</span></button>
-          <button role="tab" id="file-tab-3" aria-selected="false" aria-controls="file-panel" tabindex="-1" data-file="3"><span aria-hidden="true">▤</span> final.md <span class="file-stage">10</span></button>
-          <span class="file-extra">+ drafts, review, recall,<br>and a rebuilt outline.</span>
+          <button role="tab" id="file-tab-2" aria-selected="false" aria-controls="file-panel" tabindex="-1" data-file="2"><span aria-hidden="true">▤</span> rewrites.md <span class="file-stage">07</span></button>
+          <button role="tab" id="file-tab-3" aria-selected="false" aria-controls="file-panel" tabindex="-1" data-file="3"><span aria-hidden="true">▤</span> final.md <span class="file-stage">09</span></button>
+          <span class="file-extra">+ drafts, reader reports,<br>outlines, and a fact-check.</span>
         </div><div id="file-panel" role="tabpanel" aria-labelledby="file-tab-0" tabindex="0"><div class="file-caption"><span id="file-caption">A question to give the essay direction.</span><span aria-hidden="true">↙</span></div><pre id="file-preview"><code>Question: What makes an argument convincing?
+Reader: A curious reader with no formal training
 Words: 1500
-Language: en
-Style: APA</code></pre><div class="local-badge"><span aria-hidden="true">⌁</span> Markdown files. On your machine.</div></div></div>
+Language: en</code></pre><div class="local-badge"><span aria-hidden="true">⌁</span> Markdown files. On your machine.</div></div></div>
       </div>
     </section>
 
-    <section class="principles wrap" aria-label="Principles behind the skill"><article><span class="principle-icon" aria-hidden="true">↳</span><h3>Sources before sentences.</h3><p>At least five sources per thousand words. The checker fetches every link, and your notes stay with the text.</p></article><article><span class="principle-icon" aria-hidden="true">Ⅲ</span><h3>One sentence. Three versions.</h3><p>The rewrite explores at least three versions of each sentence and requires changes to 70% of the sentences.</p></article><article><span class="principle-icon" aria-hidden="true">↻</span><h3>The memory test.</h3><p>One agent summarizes the essay. Another, who has never read the original, rebuilds the argument from that summary.</p></article></section>
+    <section class="principles wrap" aria-label="Principles behind the skill"><article><span class="principle-icon" aria-hidden="true">↳</span><h3>Sources before sentences.</h3><p>At least three sources, with facts, scenes, numbers, and quotes. Research records the strongest objection and what the material cannot answer.</p></article><article><span class="principle-icon" aria-hidden="true">Ⅲ</span><h3>Revise the flawed spans.</h3><p>An editor identifies what needs work. Each flawed span gets three alternatives or a reason to keep it. Structure comes before sentence polish.</p></article><article><span class="principle-icon" aria-hidden="true">↻</span><h3>The memory test.</h3><p>A fresh reader outlines the draft from memory and reports where they got lost or would have stopped. A second reading checks the finished essay.</p></article></section>
     </div>
 
-    <section class="install" id="install" aria-labelledby="install-title"><div class="wrap install-grid"><div><div class="eyebrow">04 — START WITH A QUESTION</div><h2 id="install-title">Less instant text.<br>More <em>considered thought.</em></h2><p>Install the skill, open Claude Code, and ask your first question. The process starts there.</p><div class="requirements"><span>WHAT YOU'LL NEED</span><a href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener noreferrer">Claude Code ↗</a><a href="https://docs.astral.sh/uv/" target="_blank" rel="noopener noreferrer">uv · Python 3.11+ ↗</a><a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">Node.js 18+ ↗</a></div></div><div class="install-card"><div class="install-tabs" role="tablist" aria-label="Installation method"><button role="tab" id="install-npm" aria-selected="true" aria-controls="install-panel" data-install="npm">npm <span class="soon-badge" id="npm-release-status">v0.1.0</span></button><button role="tab" id="install-npx" aria-selected="false" aria-controls="install-panel" tabindex="-1" data-install="npx">npx</button><button role="tab" id="install-git" aria-selected="false" aria-controls="install-panel" tabindex="-1" data-install="git">Git</button></div><div id="install-panel" role="tabpanel" aria-labelledby="install-npm" tabindex="0"><div class="install-label"><span id="install-label">01 / INSTALL THE SKILL</span><button class="copy-button" id="copy-install" type="button" aria-label="Copy installation command">Copy <span aria-hidden="true">⧉</span></button></div><pre class="install-command"><code id="install-command">npm install -g jp-essay
-jp-essay</code></pre><p class="install-status" id="install-status" role="status">Install the CLI globally, then run jp-essay to set up the skill. Use jp-essay --project for the current project only.</p><div class="install-label usage-label"><span>02 / IN CLAUDE CODE</span><button class="copy-button" id="copy-usage" type="button" aria-label="Copy usage example">Copy <span aria-hidden="true">⧉</span></button></div><pre class="usage-command"><code id="usage-command">/jp-essay What makes an argument convincing? 1500 en APA</code></pre><p class="command-hint">Question · word count · language · citation style<br><span>The last three are optional.</span></p></div></div></div></section>
+    <section class="install" id="install" aria-labelledby="install-title"><div class="wrap install-grid"><div><div class="eyebrow">04 — START WITH A QUESTION</div><h2 id="install-title">Less instant text.<br>More <em>considered thought.</em></h2><p>Install the skill, open Claude Code, and ask your first question. The process starts there.</p><div class="requirements"><span>WHAT YOU'LL NEED</span><a href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener noreferrer">Claude Code ↗</a><a href="https://docs.astral.sh/uv/" target="_blank" rel="noopener noreferrer">uv · Python 3.11+ ↗</a><a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">Node.js 18+ · npm only ↗</a></div></div><div class="install-card"><div class="install-tabs" role="tablist" aria-label="Installation method"><button role="tab" id="install-git" aria-selected="true" aria-controls="install-panel" data-install="git">Git <span class="soon-badge">current</span></button><button role="tab" id="install-npm" aria-selected="false" aria-controls="install-panel" tabindex="-1" data-install="npm">npm <span class="soon-badge" id="npm-release-status">v0.1.0</span></button><button role="tab" id="install-npx" aria-selected="false" aria-controls="install-panel" tabindex="-1" data-install="npx">npx</button></div><div id="install-panel" role="tabpanel" aria-labelledby="install-git" tabindex="0"><div class="install-label"><span id="install-label">01 / INSTALL THE SKILL</span><button class="copy-button" id="copy-install" type="button" aria-label="Copy installation command">Copy <span aria-hidden="true">⧉</span></button></div><pre class="install-command"><code id="install-command">git clone https://github.com/lucasbabur/jp-essay ~/.claude/skills/jp-essay &amp;&amp;
+~/.claude/skills/jp-essay/install.sh</code></pre><p class="install-status" id="install-status" role="status">Installs the current general and scientific skills. Start a new Claude Code session after installation.</p><div class="install-label usage-label"><span>02 / IN CLAUDE CODE</span><button class="copy-button" id="copy-usage" type="button" aria-label="Copy usage example">Copy <span aria-hidden="true">⧉</span></button></div><pre class="usage-command"><code id="usage-command">/jp-essay What makes an argument convincing? 1500 en</code></pre><p class="command-hint">Question · word count · language<br><span>Word count and language are optional. For citations, use /jp-essay-scientific with a citation style such as APA.</span></p></div></div></div></section>
 
   </main>
 

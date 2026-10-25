@@ -51,100 +51,92 @@ const steps = [
   [
     "BEFORE WRITING",
     "Start with a better question.",
-    "A topic is broad. A question gives it direction. You confirm the question your essay will answer, the word count, the language, and the citation style.",
+    "You confirm the question, who will read the essay, the word count, and the language. The reader's knowledge shapes what the essay needs to explain.",
     "question",
-    "Checks all four fields, the question, and the minimum length of 1,000 words.",
+    "Checks the question, reader, language, and a target of at least 500 words.",
     "question.md"
   ],
   [
     "RESEARCH",
     "Have something worth saying.",
-    "An agent researches books and articles, gathers notes, and records excerpts. You get at least five sources per thousand words, with every link fetched by the checker.",
+    "Research gathers facts, scenes, numbers, and quotes, guided by a skeptic, a newcomer, and an expert. It records the strongest objection and missing facts. Your own records can be sources too.",
     "sources",
-    "Checks the source count, the required fields, and access to every link.",
-    "sources.md"
+    "Requires at least three sources with notes. Fetches web links, checks local paths, and flags access problems for review.",
+    "sources.md + research.md"
   ],
   [
     "STRUCTURE",
     "An argument before the prose.",
-    "Each paragraph starts as one sentence in the outline. A reviewer looks for factual errors, unsupported claims, and gaps in the logic before the first draft.",
+    "State a thesis that answers the reader's question. Choose a case to follow and a puzzle to resolve, then outline one claim per paragraph. A critic challenges the argument before drafting.",
     "outline",
-    "Checks the outline length and the sub-outlines required for longer essays.",
+    "Checks the thesis, the outline length, complete sentences, and referenced source identifiers.",
     "outline.md + outline-review.md"
   ],
   [
     "DRAFTING",
     "Permission to write badly.",
-    "The first draft is fast and deliberately imperfect. The agent produces without editing, marking every borrowed claim with the identifier of its source.",
+    "One author writes straight through before editing, keeping a consistent voice. A case carries the argument, with at most one named study per paragraph. The draft leaves room to cut.",
     "draft",
-    "Checks the paragraph structure and whether each marker points to an existing source.",
-    "draft-1.md"
+    "Checks length from the target to 15% above it, body structure, and mechanical writing patterns. Scientific drafts also need source markers.",
+    "draft.md"
   ],
   [
-    "REWRITING",
-    "The first version doesn't win by default.",
-    "Agents work on paragraphs in parallel. Every sentence gets at least three versions with a different structure or idea. At least 70% of the sentences must change.",
-    "rewrite",
-    "Checks the versions per sentence and the minimum proportion of changed sentences.",
-    "rewrites/ + draft-2.md"
+    "DISTANCE",
+    "What does a fresh reader remember?",
+    "A fresh reader reads the draft once and outlines it from memory. They report where they lost the thread, would have stopped reading, or doubted a claim, and what stayed with them.",
+    "recall",
+    "Requires one recall sentence per paragraph, in the reader's own words, and all eight sections of the reader report.",
+    "reader.md"
   ],
   [
     "SEQUENCING",
     "Every sentence earns the next.",
-    "First the sentences, then the paragraphs. The text is reordered so each part follows from the one before it. Every paragraph gets a reason for its position.",
-    "order",
-    "Requires a recorded reason for every paragraph's position.",
-    "order.md"
+    "Compare the reader's recall with the intended outline. Build a new outline, then reorder paragraphs and sentences, rebuild points that did not land, and cut what the reader skipped.",
+    "outline2",
+    "Checks the new outline, one draft paragraph per point, and draft length from the target to 15% above it.",
+    "outline-2.md + draft-2.md"
   ],
   [
-    "DISTANCE",
-    "What survives when the text disappears?",
-    "One agent reads the essay once and writes a short summary. Another, who has never seen the original, rebuilds the argument from that summary and the initial question.",
-    "recall + outline2",
-    "Limits the summary to fewer than 300 words and checks the length of the rebuilt outline.",
-    "recall.md + outline-2.md"
+    "REWRITING",
+    "Revise where it makes a difference.",
+    "An editor marks up to 25 flawed spans. Each gets three distinct alternatives or a reason to keep it. Apply the chosen edits, check the surrounding sentences, and add a title.",
+    "rewrite + final",
+    "Checks each edit's alternatives or rejection reason and chosen text. The final essay must land between 90% and 100% of the target.",
+    "edits.md + rewrites.md + final.md"
   ],
   [
-    "REBUILDING",
-    "Rewrite. Rebuild. Know what to cut.",
-    "The essay is rebuilt on the new outline. Material that supports each idea stays. Anything that no longer serves the argument gets cut.",
-    "refill",
-    "Checks the paragraph requirements and matches direct quotations against the source notes.",
-    "final.md"
+    "FACT-CHECKING",
+    "Every claim answers to the notes.",
+    "A fact-checker reviews numbers, names, results, quotes, and causal claims against the source notes. Each is marked supported, fixed, or cut. This pass changes facts without restyling the prose.",
+    "facts + final",
+    "Checks recorded verdicts, source identifiers, and supported claims in the essay, then rechecks the final text and its length.",
+    "facts.md + final.md"
   ],
   [
     "CRITIQUE",
     "Can it be better?",
-    "A fresh critic finds the ten weakest sentences. A proposed rewrite is accepted only when its specific improvement can be identified. The process runs for no more than three rounds.",
-    "refill",
-    "The revised text passes through the content and structure checks again.",
-    "final.md · revised"
-  ],
-  [
-    "FORMATTING",
-    "Now give it its final form.",
-    "The essay gets a title, in-text citations, and a reference list in your chosen style. The handoff includes the file path, word count, and number of cited sources.",
+    "A second fresh reader checks what the finished essay communicates and where they would stop. Fix the remaining problems in one final pass, then report sources, fact-check changes, gaps, and doubts.",
     "final",
-    "Checks the title, references, resolved citations, and a word count between your target and 10% above it.",
-    "final.md · complete"
+    "Rechecks title, length, quotations against source notes, and mechanical writing patterns. Scientific essays also need citations and references.",
+    "reader-2.md + final.md"
   ]
 ];
 const samples = [
   [
     "A question to give the essay direction.",
-    "Question: What makes an argument convincing?\nWords: 1500\nLanguage: en\nStyle: APA"
+    "Question: What makes an argument convincing?\nReader: A curious reader with no formal training\nWords: 1500\nLanguage: en"
   ],
   [
     "The sources, notes, and origins of each idea.",
-    "## source-id\nLink: <URL of the article or book>\nCite: <in-text citation>\nReference: <bibliographic reference>\nNotes:\n<notes and verbatim excerpts from the source>"
+    "## source-id\nLink: <URL, DOI, local path, or conversation>\nNotes:\n<Facts, scenes, numbers, and verbatim quotes.>"
   ],
   [
-    "Every sentence revision stays on record.",
-    "### S1\n- v1: <the first version of the sentence>\n- v2: <a different structure>\n- v3: <another way to build the idea>\nChosen: <the selected version>"
+    "Alternatives for each flawed span stay on record.",
+    '### 1\nSpan: "<the exact flawed span>"\n- v1: <a clearer version>\n- v2: <a different structure>\n- v3: <another way to build the idea>\nChosen: <the selected version>\n\n<Or Rejected: followed by the reason to keep it.>'
   ],
   [
-    "The final essay, citations and references included.",
-    "# <Essay title>\n\n<Revised paragraphs following the new outline.>\n<Citations in your chosen style.>\n\n## References\n<References for the sources cited.>"
+    "The finished essay, revised and fact-checked.",
+    "# <A title of at most eight words>\n\n<Revised paragraphs following the new outline.>\n<Claims checked against the source notes.>\n\n<The scientific edition also adds citations\nand a reference list in your chosen style.>"
   ]
 ];
 
@@ -181,7 +173,7 @@ tabs('[data-step]', (button, index) => {
   const direction = index < previousStep ? -1 : 1;
   previousStep = index;
   const [category, title, description, gate, gateDescription, file] = steps[index];
-  for (const [id, value] of Object.entries({'step-category': category, 'step-counter': `${String(index + 1).padStart(2, '0')} / 10`, 'large-step': String(index + 1).padStart(2, '0'), 'step-title': title, 'step-description': description, 'gate-name': gate, 'gate-description': gateDescription, 'step-file': file})) document.getElementById(id).textContent = value;
+  for (const [id, value] of Object.entries({'step-category': category, 'step-counter': `${String(index + 1).padStart(2, '0')} / ${String(steps.length).padStart(2, '0')}`, 'large-step': String(index + 1).padStart(2, '0'), 'step-title': title, 'step-description': description, 'gate-name': gate, 'gate-description': gateDescription, 'step-file': file})) document.getElementById(id).textContent = value;
   const panel = document.getElementById('step-panel');
   panel.setAttribute('aria-labelledby', button.id);
   if (stepMotion.matches) return;
@@ -344,9 +336,9 @@ function initFilePreview() {
 initFilePreview();
 function initInstallTabs() {
   const methods = {
-    npm: ['npm install -g jp-essay\njp-essay', 'Install the CLI globally, then run jp-essay to set up the skill. Use jp-essay --project for the current project only.'],
-    npx: ['npx jp-essay@latest', 'Installs the skill for your Claude Code user. Add --project to install in the current project only.'],
-    git: ['git clone https://github.com/lucasbabur/jp-essay ~/.claude/skills/jp-essay', 'The repository is being prepared for launch. GitHub access is currently required.']
+    git: ['git clone https://github.com/lucasbabur/jp-essay ~/.claude/skills/jp-essay &&\n~/.claude/skills/jp-essay/install.sh', 'Installs the current general and scientific skills. Start a new Claude Code session after installation.'],
+    npm: ['npm install -g jp-essay\njp-essay', 'npm currently publishes v0.1.0 with the earlier method. Choose Git for the nine-step process and scientific edition described here.'],
+    npx: ['npx jp-essay@latest', 'The latest npm release is currently v0.1.0 with the earlier method. Choose Git for the current general and scientific skills.']
   };
   const panel = document.getElementById('install-panel');
   const command = document.getElementById('install-command');
@@ -417,7 +409,7 @@ document.getElementById('copy-hero-install').addEventListener('click', () => cop
 document.getElementById('copy-install').addEventListener('click', () => copy('install-command'));
 document.getElementById('copy-usage').addEventListener('click', () => copy('usage-command'));
 
-// The local server can read private repositories; static hosting uses the public API.
+// Prefer the local cached endpoint; static hosting falls back to GitHub's public API.
 async function refreshGitHubStars() {
   const count = document.getElementById('github-star-count');
   if (!count) return;
@@ -427,6 +419,7 @@ async function refreshGitHubStars() {
     try {
       const response = await fetch(url, {
         headers: {Accept: 'application/json'},
+        cache: 'no-store',
         signal: controller.signal
       });
       if (!response.ok) continue;
@@ -444,8 +437,15 @@ async function refreshGitHubStars() {
       clearTimeout(timer);
     }
   }
+  if (count.textContent === '—') {
+    count.parentElement.setAttribute('aria-label', 'GitHub star count unavailable');
+    count.parentElement.title = 'View the current star count on GitHub';
+  }
 }
 refreshGitHubStars();
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) refreshGitHubStars();
+});
 setInterval(() => {
   if (!document.hidden) refreshGitHubStars();
 }, 60000);
