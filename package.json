@@ -1,0 +1,39 @@
+{
+  "name": "jp-essay",
+  "version": "0.2.0",
+  "description": "Claude Code skills that make a model write an essay the slow way, with a script checking every step.",
+  "type": "module",
+  "bin": {
+    "jp-essay": "bin/jp-essay.js"
+  },
+  "files": [
+    "bin/jp-essay.js",
+    "SKILL.md",
+    "check.py",
+    "style.md",
+    "tells.md",
+    "assets/icon.png",
+    "scientific/SKILL.md"
+  ],
+  "scripts": {
+    "test": "node --test test/install.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["claude", "claude-code", "claude-skill", "essay", "writing", "ai-writing"],
+  "author": "lucasbabur",
+  "license": "MIT",
+  "homepage": "https://lucasbabur.github.io/jp-essay/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasbabur/jp-essay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasbabur/jp-essay/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

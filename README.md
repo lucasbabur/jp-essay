@@ -12,6 +12,7 @@ Question, reading list, outline, bad draft, outline from memory, reorder, rewrit
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/runs_with-uv-DE5FE9?style=flat-square)](https://docs.astral.sh/uv/)
 [![Languages](https://img.shields.io/badge/essays-en_%7C_pt-1F2A44?style=flat-square)](#usage)
+[![npm](https://img.shields.io/npm/v/jp-essay?style=flat-square&color=CB3837)](https://www.npmjs.com/package/jp-essay)
 [![License: MIT](https://img.shields.io/badge/license-MIT-8a857c?style=flat-square)](LICENSE)
 
 **[Website](https://lucasbabur.github.io/jp-essay/)** · **[Read a sample essay](https://lucasbabur.github.io/jp-essay/sample.html)**
@@ -58,10 +59,18 @@ You answer one short form at the start. After that the skill runs on its own unt
 You need [Claude Code](https://docs.claude.com/en/docs/claude-code) and [uv](https://docs.astral.sh/uv/). The checker declares its own Python dependencies.
 
 ```bash
+npx jp-essay@latest
+```
+
+That installs both `/jp-essay` and `/jp-essay-scientific` into `~/.claude/skills`. Start a new Claude Code session and they're there. To update later, run `npx jp-essay@latest --force`. `npx jp-essay doctor` checks that Claude Code and uv are installed.
+
+To track the repo instead, clone it:
+
+```bash
 git clone https://github.com/lucasbabur/jp-essay ~/.claude/skills/jp-essay && ~/.claude/skills/jp-essay/install.sh
 ```
 
-That installs both `/jp-essay` and `/jp-essay-scientific`. Start a new Claude Code session and they're there. To update later, run `git -C ~/.claude/skills/jp-essay pull`.
+Update a clone with `git -C ~/.claude/skills/jp-essay pull`.
 
 ## Usage
 
@@ -136,7 +145,10 @@ The mechanical tells are AI vocabulary, filler, stock openers, "serves as", "not
 
 ```bash
 uv run --with pytest==8.3.4 --with pysbd==0.3.4 --with httpx==0.28.1 pytest -q test_check.py
+npm test   # the npx installer
 ```
+
+Publishing a GitHub release publishes the package to npm (`.github/workflows/publish.yml`).
 
 The website is `docs/`, served by GitHub Pages.
 
