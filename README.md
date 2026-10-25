@@ -14,7 +14,7 @@ Question, reading list, outline, bad draft, outline from memory, reorder, rewrit
 [![Languages](https://img.shields.io/badge/essays-en_%7C_pt-1F2A44?style=flat-square)](#usage)
 [![License: MIT](https://img.shields.io/badge/license-MIT-8a857c?style=flat-square)](LICENSE)
 
-**[Website](https://lucasbabur.github.io/jp-essay/)** · **[Read a sample essay](https://lucasbabur.github.io/jp-essay/sample.html)**
+**[Website](https://jpessay.com/)** · **[Read a sample essay](https://jpessay.com/sample.html)**
 
 </div>
 
@@ -108,7 +108,7 @@ what-made-dinosaurs-dominate-land/
 
 ## Sample essay
 
-[*Do We Sleep to Wash the Brain?*](examples/do-we-sleep-to-wash-the-brain.md) came out of one unedited run with a 500-word ceiling. It follows the reader through the morning after an all-nighter, across a 2013 study, a 2024 study that contradicts it, a sleep-deprivation experiment in Oslo and a 2025 twist. The fact-check covered 32 claims and fixed one. [Read it on the website](https://lucasbabur.github.io/jp-essay/sample.html).
+[*Do We Sleep to Wash the Brain?*](examples/do-we-sleep-to-wash-the-brain.md) came out of one unedited run with a 500-word ceiling. It follows the reader through the morning after an all-nighter, across a 2013 study, a 2024 study that contradicts it, a sleep-deprivation experiment in Oslo and a 2025 twist. The fact-check covered 32 claims and fixed one. [Read it on the website](https://jpessay.com/sample.html).
 
 ## The gates
 
@@ -138,7 +138,7 @@ The mechanical tells are AI vocabulary, filler, stock openers, "serves as", "not
 uv run --with pytest==8.3.4 --with pysbd==0.3.4 --with httpx==0.28.1 pytest -q test_check.py
 ```
 
-The website is `docs/`, served by GitHub Pages.
+The website, [jpessay.com](https://jpessay.com/), is `docs/`, served by GitHub Pages.
 
 ## Credits
 
