@@ -15,7 +15,7 @@ Question, reading list, outline, bad draft, outline from memory, reorder, rewrit
 [![npm](https://img.shields.io/npm/v/jp-essay?style=flat-square&color=CB3837)](https://www.npmjs.com/package/jp-essay)
 [![License: MIT](https://img.shields.io/badge/license-MIT-8a857c?style=flat-square)](LICENSE)
 
-**[Website](https://lucasbabur.github.io/jp-essay/)** · **[Read a sample essay](https://lucasbabur.github.io/jp-essay/sample.html)**
+**[Website](https://jpessay.com/)** · **[Read a sample essay](https://jpessay.com/sample.html)**
 
 </div>
 
@@ -117,7 +117,7 @@ what-made-dinosaurs-dominate-land/
 
 ## Sample essay
 
-[*Do We Sleep to Wash the Brain?*](examples/do-we-sleep-to-wash-the-brain.md) came out of one unedited run with a 500-word ceiling. It follows the reader through the morning after an all-nighter, across a 2013 study, a 2024 study that contradicts it, a sleep-deprivation experiment in Oslo and a 2025 twist. The fact-check covered 32 claims and fixed one. [Read it on the website](https://lucasbabur.github.io/jp-essay/sample.html).
+[*Do We Sleep to Wash the Brain?*](examples/do-we-sleep-to-wash-the-brain.md) came out of one unedited run with a 500-word ceiling. It follows the reader through the morning after an all-nighter, across a 2013 study, a 2024 study that contradicts it, a sleep-deprivation experiment in Oslo and a 2025 twist. The fact-check covered 32 claims and fixed one. [Read it on the website](https://jpessay.com/sample.html).
 
 ## The gates
 
@@ -150,7 +150,7 @@ npm test   # the npx installer
 
 Publishing a GitHub release publishes the package to npm (`.github/workflows/publish.yml`).
 
-The website is `docs/`, served by GitHub Pages.
+The website, [jpessay.com](https://jpessay.com/), is `docs/`, served by GitHub Pages.
 
 ## Credits
 
