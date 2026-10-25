@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="300" viewBox="0 0 260 300" fill="none">
+  <style>.ink{stroke-dasharray:1;stroke-dashoffset:1}.line-0{animation:line-0 14s linear infinite;animation-delay:-4s}@keyframes line-0{0%,6%{stroke-dashoffset:1;opacity:1}14%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-1{animation:line-1 14s linear infinite;animation-delay:-4s}@keyframes line-1{0%,15%{stroke-dashoffset:1;opacity:1}23%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-2{animation:line-2 14s linear infinite;animation-delay:-4s}@keyframes line-2{0%,24%{stroke-dashoffset:1;opacity:1}32%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-3{animation:line-3 14s linear infinite;animation-delay:-4s}@keyframes line-3{0%,33%{stroke-dashoffset:1;opacity:1}41%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-4{animation:line-4 14s linear infinite;animation-delay:-4s}@keyframes line-4{0%,42%{stroke-dashoffset:1;opacity:1}50%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}@media(prefers-reduced-motion:reduce){.ink{animation:none;stroke-dashoffset:0;opacity:1}}</style><defs>
+    <linearGradient id="page" x1="48" y1="25" x2="228" y2="278" gradientUnits="userSpaceOnUse"><stop stop-color="#fcf7e9" /><stop offset="1" stop-color="#e8ddc4" /></linearGradient>
+    <filter id="shadow" x="-25%" y="-15%" width="160%" height="155%"><feDropShadow dx="5" dy="8" stdDeviation="5" flood-color="#152a35" flood-opacity=".15" /></filter>
+    <pattern id="ruled" width="160" height="18" patternUnits="userSpaceOnUse"><path d="M0 17.5H160" stroke="#9caead" stroke-opacity=".45" stroke-width=".8" /></pattern>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="34" y="24" width="200" height="258" rx="4" fill="#314b50" />
+    <path d="M44 23H227V275H44" fill="#d4c7ab" stroke="#bcaf93" />
+    <path d="M43 20H224V271H43" fill="#e6dbc1" stroke="#c9bba0" />
+    <path d="M42 17H220V266H42Z" fill="url(#page)" stroke="#c4b597" />
+    <path d="M70 48H208V250H70Z" fill="url(#ruled)" />
+    <path d="M67 34V252" stroke="#b87964" stroke-opacity=".45" />
+    <g fill="#a1937a"><circle cx="51" cy="39" r="3" /><circle cx="51" cy="65" r="3" /><circle cx="51" cy="91" r="3" /><circle cx="51" cy="117" r="3" /><circle cx="51" cy="143" r="3" /><circle cx="51" cy="169" r="3" /><circle cx="51" cy="195" r="3" /><circle cx="51" cy="221" r="3" /><circle cx="51" cy="247" r="3" /></g>
+    <g stroke="#576665" stroke-width="2.4" stroke-linecap="round"><path d="M51 39C23 44 23 27 47 29M51 65C23 70 23 53 47 55M51 91C23 96 23 79 47 81M51 117C23 122 23 105 47 107M51 143C23 148 23 131 47 133M51 169C23 174 23 157 47 159M51 195C23 200 23 183 47 185M51 221C23 226 23 209 47 211M51 247C23 252 23 235 47 237" /></g>
+    <g stroke="#4d6265" stroke-width="1.5" stroke-linecap="round" opacity=".65"><path d="M82 62q7-9 10-2t12-1 11 1 12-2 11 2 13-1" pathLength="1" class="ink line-0" /><path d="M82 80q6-6 11-1t12-1 13 2 12-2 10 1 16-1" pathLength="1" class="ink line-1" /><path d="M82 116q6-6 11-1t12-1 13 2 12-2 11 1 17-1" pathLength="1" class="ink line-2" /><path d="M82 134q8-7 12-1t13-1 12 2 13-2 11 2" pathLength="1" class="ink line-3" /><path d="M82 170q7-8 11-2t12-1 13 2 12-2 13 1 13-1" pathLength="1" class="ink line-4" /></g>
+    <path d="M80 91H163M84 206q34-17 71-1M158 199l8 8-10 6" stroke="#b45835" stroke-width="1.5" stroke-linecap="round" opacity=".65" />
+    <path d="M184 17v40l8-6 8 6V17" fill="#b45835" fill-opacity=".75" />
+  </g>
+</svg>
