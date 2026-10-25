@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="500" viewBox="0 0 300 500" fill="none"><defs>
+    <linearGradient id="pen-barrel" x1="32" y1="0" x2="70" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#102d3c" /><stop offset=".35" stop-color="#3d5761" /><stop offset=".55" stop-color="#203d4a" /><stop offset="1" stop-color="#112a37" /></linearGradient>
+    <linearGradient id="pen-brass" x1="34" y1="0" x2="67" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#9d7248" /><stop offset=".4" stop-color="#dfc99a" /><stop offset=".7" stop-color="#c7a16e" /><stop offset="1" stop-color="#8e643e" /></linearGradient>
+    <filter id="pen-shadow" x="-80%" y="-10%" width="260%" height="130%"><feDropShadow dx="5" dy="7" stdDeviation="5" flood-color="#152a35" flood-opacity=".14" /></filter>
+  </defs>
+  <style>.ink{stroke-dasharray:1;stroke-dashoffset:1}.writing-pen{transform-origin:0 0;animation:write-pen 12s linear infinite}.line-0{animation:ink-0 12s linear infinite}@keyframes ink-0{0%,0%{stroke-dashoffset:1;opacity:1}16%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-1{animation:ink-1 12s linear infinite}@keyframes ink-1{0%,20%{stroke-dashoffset:1;opacity:1}36%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-2{animation:ink-2 12s linear infinite}@keyframes ink-2{0%,40%{stroke-dashoffset:1;opacity:1}56%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-3{animation:ink-3 12s linear infinite}@keyframes ink-3{0%,60%{stroke-dashoffset:1;opacity:1}76%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}@keyframes write-pen{0%{transform:translate(102px,254px) rotate(19deg);opacity:1}4%{transform:translate(132px,256px) rotate(22deg);opacity:1}8%{transform:translate(162px,254px) rotate(19deg);opacity:1}12%{transform:translate(192px,256px) rotate(22deg);opacity:1}16%{transform:translate(222px,254px) rotate(19deg);opacity:1}20%{transform:translate(102px,273px) rotate(19deg);opacity:1}24%{transform:translate(132px,275px) rotate(22deg);opacity:1}28%{transform:translate(162px,273px) rotate(19deg);opacity:1}32%{transform:translate(192px,275px) rotate(22deg);opacity:1}36%{transform:translate(222px,273px) rotate(19deg);opacity:1}40%{transform:translate(102px,292px) rotate(19deg);opacity:1}44%{transform:translate(132px,294px) rotate(22deg);opacity:1}48%{transform:translate(162px,292px) rotate(19deg);opacity:1}52%{transform:translate(192px,294px) rotate(22deg);opacity:1}56%{transform:translate(222px,292px) rotate(19deg);opacity:1}60%{transform:translate(102px,311px) rotate(19deg);opacity:1}64%{transform:translate(132px,313px) rotate(22deg);opacity:1}68%{transform:translate(162px,311px) rotate(19deg);opacity:1}72%{transform:translate(192px,313px) rotate(22deg);opacity:1}76%{transform:translate(222px,311px) rotate(19deg);opacity:1}80%,88%{transform:translate(232px,299px) rotate(25deg);opacity:1}94%,100%{transform:translate(250px,273px) rotate(29deg);opacity:0}}@media(prefers-reduced-motion:reduce){.ink{animation:none;stroke-dashoffset:0;opacity:1}.writing-pen{animation:none;transform:translate(222px,311px) rotate(20deg);opacity:1}}</style><svg width="260" height="300" viewBox="0 0 260 300" fill="none" x="20" y="190">
+  <defs>
+    <linearGradient id="paper" x1="35" y1="15" x2="235" y2="285" gradientUnits="userSpaceOnUse"><stop stop-color="#fffcf3" /><stop offset="1" stop-color="#e9dfc7" /></linearGradient>
+    <filter id="shadow" x="-20%" y="-15%" width="150%" height="150%"><feDropShadow dx="3" dy="7" stdDeviation="5" flood-color="#152a35" flood-opacity=".12" /></filter>
+    <pattern id="rules" width="190" height="19" patternUnits="userSpaceOnUse"><path d="M0 18.5H190" stroke="#9baeb2" stroke-opacity=".4" stroke-width=".8" /></pattern>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M33 26L229 18L242 271L42 280Z" fill="#dfd5bd" stroke="#c9bfa8" />
+    <path d="M22 15L222 27L207 282L8 269Z" fill="#f1e9d6" stroke="#d2c7b0" />
+    <path d="M32 14L222 14L242 35V278L233 274L225 279L217 274L209 279L201 275L193 279L185 274L177 279L169 275L161 279L153 274L145 279L137 275L129 279L121 274L113 279L105 275L97 279L89 274L81 279L73 275L65 279L57 274L49 279L41 275L32 279Z" fill="url(#paper)" stroke="#cfc2a6" />
+    <path d="M222 14V35H242" fill="#e0d3b8" stroke="#cfc2a6" stroke-linejoin="round" />
+    <path d="M68 34V261" stroke="#b87964" stroke-opacity=".4" />
+    <path d="M45 47H230V258H45Z" fill="url(#rules)" />
+    <g fill="#d8cfbc" stroke="#c1b49b" stroke-width=".6"><circle cx="48" cy="45" r="4" /><circle cx="48" cy="133" r="4" /><circle cx="48" cy="222" r="4" /></g>
+    <g stroke="#485f65" stroke-width="1.4" stroke-linecap="round" opacity=".65">
+      </g>
+    </g>
+</svg><path d="M102 254 Q107 249 112 254 Q117 258 122 254 Q127 249 132 254 Q137 258 142 254 Q147 249 152 254 Q157 258 162 254 Q167 249 172 254 Q177 258 182 254 Q187 249 192 254 Q197 258 202 254 Q207 249 212 254 Q217 258 222 254" pathLength="1" class="ink line-0" stroke="#485f65" stroke-width="1.5" stroke-linecap="round" opacity=".7" /><path d="M102 273 Q107 268 112 273 Q117 277 122 273 Q127 268 132 273 Q137 277 142 273 Q147 268 152 273 Q157 277 162 273 Q167 268 172 273 Q177 277 182 273 Q187 268 192 273 Q197 277 202 273 Q207 268 212 273 Q217 277 222 273" pathLength="1" class="ink line-1" stroke="#485f65" stroke-width="1.5" stroke-linecap="round" opacity=".7" /><path d="M102 292 Q107 287 112 292 Q117 296 122 292 Q127 287 132 292 Q137 296 142 292 Q147 287 152 292 Q157 296 162 292 Q167 287 172 292 Q177 296 182 292 Q187 287 192 292 Q197 296 202 292 Q207 287 212 292 Q217 296 222 292" pathLength="1" class="ink line-2" stroke="#485f65" stroke-width="1.5" stroke-linecap="round" opacity=".7" /><path d="M102 311 Q107 306 112 311 Q117 315 122 311 Q127 306 132 311 Q137 315 142 311 Q147 306 152 311 Q157 315 162 311 Q167 306 172 311 Q177 315 182 311 Q187 306 192 311 Q197 315 202 311 Q207 306 212 311 Q217 315 222 311" pathLength="1" class="ink line-3" stroke="#485f65" stroke-width="1.5" stroke-linecap="round" opacity=".7" /><g class="writing-pen"><g transform="translate(-27.5 -209.55) scale(.55)"><g filter="url(#pen-shadow)">
+    <path d="M34 46Q34 22 50 20Q66 22 66 46V126H34Z" fill="url(#pen-barrel)" stroke="#152a35" stroke-opacity=".6" />
+    <path d="M40 45Q40 31 45 29" stroke="#91a09e" stroke-opacity=".55" stroke-width="2" stroke-linecap="round" />
+    <path d="M58 31v71q0 9-6 10" stroke="url(#pen-brass)" stroke-width="5" stroke-linecap="round" />
+    <rect x="33" y="119" width="34" height="8" rx="1" fill="url(#pen-brass)" />
+    <path d="M35 128H65L62 281Q61 298 50 306Q39 298 38 281Z" fill="url(#pen-barrel)" stroke="#152a35" stroke-opacity=".7" />
+    <path d="M41 141l2 132" stroke="#9ba7a1" stroke-opacity=".25" stroke-width="2" />
+    <path d="M39 292H61L59 320H41Z" fill="#17333f" />
+    <path d="M40 319H60L65 340L50 381L35 340Z" fill="url(#pen-brass)" stroke="#9a7950" stroke-width="1.2" />
+    <path d="M50 327v48M39 341l11 18 11-18M41 331l9 6 9-6" stroke="#8e6b45" stroke-width="1" />
+    <circle cx="50" cy="344" r="2.6" fill="#5c503d" />
+    <path d="M48 376l2 7 2-7" fill="#152a35" />
+  </g>
+</g></g></svg>

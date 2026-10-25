@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="300" viewBox="0 0 260 300" fill="none">
+  <style>.ink{stroke-dasharray:1;stroke-dashoffset:1}.line-0{animation:line-0 14s linear infinite;animation-delay:-1s}@keyframes line-0{0%,6%{stroke-dashoffset:1;opacity:1}14%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-1{animation:line-1 14s linear infinite;animation-delay:-1s}@keyframes line-1{0%,15%{stroke-dashoffset:1;opacity:1}23%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-2{animation:line-2 14s linear infinite;animation-delay:-1s}@keyframes line-2{0%,24%{stroke-dashoffset:1;opacity:1}32%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-3{animation:line-3 14s linear infinite;animation-delay:-1s}@keyframes line-3{0%,33%{stroke-dashoffset:1;opacity:1}41%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-4{animation:line-4 14s linear infinite;animation-delay:-1s}@keyframes line-4{0%,42%{stroke-dashoffset:1;opacity:1}50%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-5{animation:line-5 14s linear infinite;animation-delay:-1s}@keyframes line-5{0%,51%{stroke-dashoffset:1;opacity:1}59%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}.line-6{animation:line-6 14s linear infinite;animation-delay:-1s}@keyframes line-6{0%,60%{stroke-dashoffset:1;opacity:1}68%,88%{stroke-dashoffset:0;opacity:1}96%,100%{stroke-dashoffset:0;opacity:0}}@media(prefers-reduced-motion:reduce){.ink{animation:none;stroke-dashoffset:0;opacity:1}}</style><defs>
+    <linearGradient id="paper" x1="35" y1="15" x2="235" y2="285" gradientUnits="userSpaceOnUse"><stop stop-color="#fffcf3" /><stop offset="1" stop-color="#e9dfc7" /></linearGradient>
+    <filter id="shadow" x="-20%" y="-15%" width="150%" height="150%"><feDropShadow dx="3" dy="7" stdDeviation="5" flood-color="#152a35" flood-opacity=".12" /></filter>
+    <pattern id="rules" width="190" height="19" patternUnits="userSpaceOnUse"><path d="M0 18.5H190" stroke="#9baeb2" stroke-opacity=".4" stroke-width=".8" /></pattern>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M33 26L229 18L242 271L42 280Z" fill="#dfd5bd" stroke="#c9bfa8" />
+    <path d="M22 15L222 27L207 282L8 269Z" fill="#f1e9d6" stroke="#d2c7b0" />
+    <path d="M32 14L222 14L242 35V278L233 274L225 279L217 274L209 279L201 275L193 279L185 274L177 279L169 275L161 279L153 274L145 279L137 275L129 279L121 274L113 279L105 275L97 279L89 274L81 279L73 275L65 279L57 274L49 279L41 275L32 279Z" fill="url(#paper)" stroke="#cfc2a6" />
+    <path d="M222 14V35H242" fill="#e0d3b8" stroke="#cfc2a6" stroke-linejoin="round" />
+    <path d="M68 34V261" stroke="#b87964" stroke-opacity=".4" />
+    <path d="M45 47H230V258H45Z" fill="url(#rules)" />
+    <g fill="#d8cfbc" stroke="#c1b49b" stroke-width=".6"><circle cx="48" cy="45" r="4" /><circle cx="48" cy="133" r="4" /><circle cx="48" cy="222" r="4" /></g>
+    <g stroke="#485f65" stroke-width="1.4" stroke-linecap="round" opacity=".65">
+      <path d="M82 64q7-8 9-2t10-1 12 2 13-2 11 2 12-1" pathLength="1" class="ink line-0" /><path d="M82 83q5-5 10-1t13-1 15 2 15-2 13 2 17-2 10 1" pathLength="1" class="ink line-1" /><path d="M83 102q6-7 11-1t12-1 13 2 11-2 13 1 14-1" pathLength="1" class="ink line-2" /><path d="M82 140q7-7 12-1t12 0 15 1 14-2 17 1 12-1" pathLength="1" class="ink line-3" /><path d="M83 159q6-5 10-1t14 0 12-1 14 1 12-1" pathLength="1" class="ink line-4" /><path d="M82 197q9-7 13-1t12-1 12 2 14-2 13 2 18-1" pathLength="1" class="ink line-5" /><path d="M82 216q6-6 11-1t12-1 14 2 14-2" pathLength="1" class="ink line-6" /></g>
+    <path d="M80 115q50 3 96-1M156 239l12 7 20-17" stroke="#b45835" stroke-width="1.5" stroke-linecap="round" opacity=".65" />
+  </g>
+</svg>
