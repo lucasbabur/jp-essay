@@ -150,7 +150,7 @@ npm test   # the npx installer
 
 Publishing a GitHub release publishes the package to npm (`.github/workflows/publish.yml`).
 
-The website, [jpessay.com](https://jpessay.com/), is `docs/`, deployed on Vercel.
+The website, [jpessay.com](https://jpessay.com/), is `landing/`, deployed on Vercel. Preview it with `python3 -m http.server -d landing 8774 --bind 127.0.0.1`.
 
 ## Credits
 
