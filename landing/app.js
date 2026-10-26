@@ -413,7 +413,7 @@ document.getElementById('copy-usage').addEventListener('click', () => copy('usag
 async function refreshGitHubStars() {
   const count = document.getElementById('github-star-count');
   if (!count) return;
-  for (const url of ['/api/github-stars', 'https://api.github.com/repos/lucasbabur/jp-essay']) {
+  for (const url of ['https://api.github.com/repos/lucasbabur/jp-essay']) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 8000);
     try {
