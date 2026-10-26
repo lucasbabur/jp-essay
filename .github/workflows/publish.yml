@@ -1,0 +1,20 @@
+# Publishes to npm when a GitHub release is published, via npm trusted publishing (no token).
+name: Publish to npm
+on:
+  release:
+    types: [published]
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - uses: astral-sh/setup-uv@v6
+      - run: uv run -q --with pytest==8.3.4 --with pysbd==0.3.4 --with httpx==0.28.1 python -m pytest -q test_check.py
+      - run: npm publish --provenance
