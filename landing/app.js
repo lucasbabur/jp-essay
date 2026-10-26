@@ -50,64 +50,64 @@ initNavigationTheme();
 const steps = [
   [
     "BEFORE WRITING",
-    "Start with a better question.",
-    "You confirm the question, who will read the essay, the word count, and the language. The reader's knowledge shapes what the essay needs to explain.",
+    "Question",
+    "One question a reader could answer two ways, plus who that reader is, how long the essay runs and its language. You confirm it all in one short form, and from there the skill runs alone. The reader decides what the essay explains, so it doesn't fill up with definitions nobody needed.",
     "question",
     "Checks the question, reader, language, and a target of at least 500 words.",
     "question.md"
   ],
   [
     "RESEARCH",
-    "Have something worth saying.",
-    "Research gathers facts, scenes, numbers, and quotes, guided by a skeptic, a newcomer, and an expert. It records the strongest objection and missing facts. Your own records can be sources too.",
+    "Reading list",
+    "A research subagent gathers facts, scenes, numbers and verbatim quotes, asking what a skeptic, a newcomer and an expert would each need. It records the strongest objection and every fact it couldn't find. For essays about you, your own records count. Specifics are the cure for generic prose.",
     "sources",
     "Requires at least three sources with notes. Fetches web links, checks local paths, and flags access problems for review.",
     "sources.md + research.md"
   ],
   [
     "STRUCTURE",
-    "An argument before the prose.",
-    "State a thesis that answers the reader's question. Choose a case to follow and a puzzle to resolve, then outline one claim per paragraph. A critic challenges the argument before drafting.",
+    "Outline",
+    "A thesis that answers the reader's own question, telling them what to do or believe, not what the studies found. A carrier, the person or case the reader follows, and a puzzle only the ending answers. Then one sentence per paragraph, and a critic attacks the plan before any drafting starts.",
     "outline",
     "Checks the thesis, the outline length, complete sentences, and referenced source identifiers.",
     "outline.md + outline-review.md"
   ],
   [
     "DRAFTING",
-    "Permission to write badly.",
-    "One author writes straight through before editing, keeping a consistent voice. A case carries the argument, with at most one named study per paragraph. The draft leaves room to cut.",
+    "Bad draft",
+    "One author writes it straight through in a smart friend's voice, carried by the case and about 15% too long, so editing has room to cut. At most one named study per paragraph, with the figures that make each claim concrete. Extra detail goes to short footnotes. There are no sentence quotas, because quotas make a model write choppy prose.",
     "draft",
     "Checks length from the target to 15% above it, body structure, and mechanical writing patterns. Scientific drafts also need source markers.",
     "draft.md"
   ],
   [
     "DISTANCE",
-    "What does a fresh reader remember?",
-    "A fresh reader reads the draft once and outlines it from memory. They report where they lost the thread, would have stopped reading, or doubted a claim, and what stayed with them.",
+    "Outline from memory",
+    "A fresh reader reads the draft once and outlines it from memory, then says where they got lost and where they would have stopped reading by choice. A model can't forget its own draft, so someone else does the remembering. Understanding a paragraph isn't the same as wanting to read the next one.",
     "recall",
     "Requires one recall sentence per paragraph, in the reader's own words, and all eight sections of the reader report.",
     "reader.md"
   ],
   [
     "SEQUENCING",
-    "Every sentence earns the next.",
-    "Compare the reader's recall with the intended outline. Build a new outline, then reorder paragraphs and sentences, rebuild points that did not land, and cut what the reader skipped.",
+    "Reorder",
+    "The recall gets compared with the outline, and a new outline comes out of it. Paragraphs are reordered, then the sentences inside them, every point that didn't land is rebuilt and whatever the reader skipped is cut. Structure is fixed before sentences, so no polish goes into paragraphs that later move or vanish.",
     "outline2",
     "Checks the new outline, one draft paragraph per point, and draft length from the target to 15% above it.",
     "outline-2.md + draft-2.md"
   ],
   [
     "REWRITING",
-    "Revise where it makes a difference.",
-    "An editor marks up to 25 flawed spans. Each gets three distinct alternatives or a reason to keep it. Apply the chosen edits, check the surrounding sentences, and add a title.",
+    "Rewrite sentences",
+    "An editor marks up to 25 flawed spans at four levels: word, sentence, paragraph and essay. Each gets three genuinely different versions or a reason it stands, and the essay gets its title. Rewriting every sentence three ways makes a model change good sentences. Rewriting only the flawed ones doesn't.",
     "rewrite + final",
     "Checks each edit's alternatives or rejection reason and chosen text. The final essay must land between 90% and 100% of the target.",
     "edits.md + rewrites.md + final.md"
   ],
   [
     "FACT-CHECKING",
-    "Every claim answers to the notes.",
-    "A fact-checker reviews numbers, names, results, quotes, and causal claims against the source notes. Each is marked supported, fixed, or cut. This pass changes facts without restyling the prose.",
+    "Fact-check",
+    "A fact-checker marks every number, name, result, quote and causal claim as supported, fixed or cut against the notes, and changes nothing else. Easy prose makes claims feel truer than they are, so accuracy gets its own pass and never touches the style. This step isn't in Peterson's guide.",
     "facts + final",
     "Checks recorded verdicts, source identifiers, and supported claims in the essay, then rechecks the final text and its length.",
     "facts.md + final.md"
@@ -115,7 +115,7 @@ const steps = [
   [
     "CRITIQUE",
     "Can it be better?",
-    "A second fresh reader checks what the finished essay communicates and where they would stop. Fix the remaining problems in one final pass, then report sources, fact-check changes, gaps, and doubts.",
+    "A second fresh reader reads the finished essay cold. It's done when their recall matches the outline and they would have kept reading. Otherwise the problems they name get fixed, once. One round only, because every further round of self-revision drifts from what the essay meant.",
     "final",
     "Rechecks title, length, quotations against source notes, and mechanical writing patterns. Scientific essays also need citations and references.",
     "reader-2.md + final.md"
