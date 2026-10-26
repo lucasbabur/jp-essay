@@ -17,4 +17,6 @@ jobs:
           registry-url: https://registry.npmjs.org
       - uses: astral-sh/setup-uv@v6
       - run: uv run -q --with pytest==8.3.4 --with pysbd==0.3.4 --with httpx==0.28.1 python -m pytest -q test_check.py
+      # Trusted publishing needs npm 11.5.1 or later.
+      - run: npm install -g npm@latest && npm --version
       - run: npm publish --provenance
