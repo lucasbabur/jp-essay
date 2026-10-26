@@ -336,8 +336,8 @@ function initFilePreview() {
 initFilePreview();
 function initInstallTabs() {
   const methods = {
-    npx: ['npx jp-essay@latest', 'Copies /jp-essay and /jp-essay-scientific into ~/.claude/skills. Start a new Claude Code session afterwards.'],
     npm: ['npm install -g jp-essay\njp-essay', 'Installs the jp-essay command; running it copies both skills into ~/.claude/skills. Start a new Claude Code session afterwards.'],
+    npx: ['npx jp-essay@latest', 'Copies /jp-essay and /jp-essay-scientific into ~/.claude/skills. Start a new Claude Code session afterwards.'],
     git: ['git clone https://github.com/lucasbabur/jp-essay ~/.claude/skills/jp-essay &&\n~/.claude/skills/jp-essay/install.sh', 'Clones the repository into ~/.claude/skills, so git pull updates it. Start a new Claude Code session afterwards.']
   };
   const panel = document.getElementById('install-panel');
