@@ -539,15 +539,7 @@ footer > .wrap {
 .hero-screen .paper-note,
 .hero-screen .facts { color: var(--ink); }
 
-/* The opening essay reads as a single column beside a sticky heading. */
-.intro-grid { align-items: start; }
-.intro-grid h2 { position: sticky; top: 120px; }
-.intro-body { font-size: 17px; line-height: 1.8; color: #4c5755; max-width: 620px; }
-.intro-body p + p { margin-top: 1.15em; }
-.intro-body .intro-note { margin-top: 2em; padding-top: 16px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
-.intro-note a { border-bottom: 1px solid var(--line); }
-.intro-note a:hover { color: var(--accent); }
-@media (max-width: 760px) {
-  .intro-grid h2 { position: static; }
-  .intro-body { font-size: 16px; }
-}
+/* The hero opens with a few short paragraphs instead of one line. */
+.hero-screen .hero-description { max-width: 470px; }
+.hero-description p + p { margin-top: .85em; }
+.hero-screen .hero-description .hero-lead { font-size: 1.2em; line-height: 1.6; color: var(--paper); }
