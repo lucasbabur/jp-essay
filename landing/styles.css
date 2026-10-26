@@ -543,3 +543,4 @@ footer > .wrap {
 .hero-screen .hero-description { max-width: 470px; }
 .hero-description p + p { margin-top: .85em; }
 .hero-screen .hero-description .hero-lead { font-size: 1.2em; line-height: 1.6; color: var(--paper); }
+.hero-description a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
