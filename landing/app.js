@@ -336,9 +336,9 @@ function initFilePreview() {
 initFilePreview();
 function initInstallTabs() {
   const methods = {
-    git: ['git clone https://github.com/lucasbabur/jp-essay ~/.claude/skills/jp-essay &&\n~/.claude/skills/jp-essay/install.sh', 'Installs the current general and scientific skills. Start a new Claude Code session after installation.'],
-    npm: ['npm install -g jp-essay\njp-essay', 'npm currently publishes v0.1.0 with the earlier method. Choose Git for the nine-step process and scientific edition described here.'],
-    npx: ['npx jp-essay@latest', 'The latest npm release is currently v0.1.0 with the earlier method. Choose Git for the current general and scientific skills.']
+    npx: ['npx jp-essay@latest', 'Copies /jp-essay and /jp-essay-scientific into ~/.claude/skills. Start a new Claude Code session afterwards.'],
+    npm: ['npm install -g jp-essay\njp-essay', 'Installs the jp-essay command; running it copies both skills into ~/.claude/skills. Start a new Claude Code session afterwards.'],
+    git: ['git clone https://github.com/lucasbabur/jp-essay ~/.claude/skills/jp-essay &&\n~/.claude/skills/jp-essay/install.sh', 'Clones the repository into ~/.claude/skills, so git pull updates it. Start a new Claude Code session afterwards.']
   };
   const panel = document.getElementById('install-panel');
   const command = document.getElementById('install-command');

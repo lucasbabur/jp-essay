@@ -12,15 +12,15 @@
   <meta property="og:url" content="https://jpessay.com/">
   <meta property="og:type" content="website">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css?v=current-method-2">
-  <script src="/app.js?v=current-method-2" defer></script>
+  <link rel="stylesheet" href="/styles.css?v=npx-intro-1">
+  <script src="/app.js?v=npx-intro-1" defer></script>
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="nav" data-theme="dark">
     <div class="wrap nav-inner">
       <a class="wordmark" href="#" aria-label="jp-essay, home"><span class="mark" aria-hidden="true">jp.</span> jp-essay</a>
-      <nav aria-label="Main navigation"><a href="#method">The method</a><a href="#files">What you get</a><a href="#install">Installation</a></nav>
+      <nav aria-label="Main navigation"><a href="#why">Why</a><a href="#method">The method</a><a href="#files">What you get</a><a href="#install">Installation</a></nav>
       <div class="nav-actions">
         <a class="github-link" href="https://github.com/lucasbabur/jp-essay" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span class="github-label">GitHub</span><span class="github-stars" aria-label="GitHub star count loading"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.3.9-4.6 4.4 1.1 6.3-5.6-3-5.6 3 1.1-6.3L2.9 9.6l6.3-.9Z"/></svg><span id="github-star-count">—</span></span></a>
         <a class="nav-download" href="#install">Download <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -38,19 +38,19 @@
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">Don't settle<br>for the <em>first</em><br>draft.</h1>
-        <p class="hero-description">Good writing takes a process. <strong>jp-essay</strong> makes Claude research, outline, rewrite, and review your argument. One step at a time.</p>
+        <p class="hero-description">Ask a model for an essay and it hands you a first draft. <strong>jp-essay</strong> makes Claude research, outline, draft, get read by a stranger, rewrite and fact-check, one step at a time.</p>
         <div class="hero-actions">
-          <div class="hero-install" role="group" aria-label="Install with npm">
+          <div class="hero-install" role="group" aria-label="Install with npx">
             <div class="hero-install-bar">
-              <span class="hero-install-label">npm</span>
+              <span class="hero-install-label">npx</span>
               <button id="copy-hero-install" type="button" aria-label="Copy installation command" title="Copy command"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M13 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/></svg></button>
             </div>
             <div>
               <div class="hero-install-body">
                 <span class="hero-prompt" aria-hidden="true">$</span>
-                <code id="hero-install-command">npm install -g jp-essay</code>
+                <code id="hero-install-command">npx jp-essay@latest</code>
               </div>
-              <p class="hero-install-target" id="hero-install-target">Node.js 18+ · then run jp-essay</p>
+              <p class="hero-install-target" id="hero-install-target">Node.js 18+ · then open Claude Code</p>
             </div>
           </div>
         </div>
@@ -95,6 +95,22 @@
     </section>
 
     </div>
+
+    <section class="intro wrap" id="why" aria-labelledby="why-title">
+      <div class="section-label"><span>01 — WHY IT EXISTS</span><span>THE SLOW WAY, ON PURPOSE</span></div>
+      <div class="intro-grid">
+        <h2 id="why-title">A model writes fast.<br><em>That's the problem.</em></h2>
+        <div class="intro-body">
+          <p>Ask a model for an essay and you get one in twenty seconds. It reads fine. There's an introduction, three tidy points and a conclusion that tells you what you just read. An hour later you try to recall one sentence from it, and nothing comes back.</p>
+          <p>Jordan Peterson wrote his essay guide for students, whose problem is skipping the work. They never pick a real question, they don't read, they don't outline, and they hand in the first draft. A model has the opposite problem. It does every step at once, fluently, and the fluency is the trouble. You get no claim anyone would argue with, no names or numbers, hedges stacked three deep, and an ending that summarizes when it should answer.</p>
+          <p>jp-essay keeps Peterson's steps and aims each one at that failure. Research comes first, so the essay has something specific to say. The outline commits to a thesis you could disagree with, a case the reader follows from the first paragraph to the last, and a puzzle that only the ending resolves. Then the draft gets written straight through, badly if need be, and nobody edits a word until it's finished.</p>
+          <p>Next comes the step a model can't do alone. Peterson's guide tells you to put the draft away and outline it from memory, because what you remember is what the essay actually says. A model can't forget its own draft, so a fresh reader does the remembering. That reader says where they got lost and where they would have quit, and the essay is rebuilt around their answers. An editor marks the weak sentences. Each one gets three genuinely different rewrites or a reason to stay. Last, a separate fact-checker holds every number, name and quote against the notes and leaves the style alone.</p>
+          <p>No model grades the prose along the way, because models asked to judge writing barely beat chance and they reward overwriting. Readers report what happened to them, editors point at sentences, and a small script checks each step before the next one starts, so nothing gets skipped and called done.</p>
+          <p>It takes longer than asking once. In exchange you get an essay that answers the question you asked, and a folder showing how it got there.</p>
+          <p class="intro-note">jp-essay is an independent project. It is not affiliated with or endorsed by Jordan B. Peterson. It adapts the method in his <a href="https://essay.app/guide" target="_blank" rel="noopener noreferrer">writing guide</a> for AI agents.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="method" id="method" aria-labelledby="method-title">
       <div class="method-pulse" aria-hidden="true"><i class="method-pulse-wash"></i><span></span><span></span><span></span></div>
@@ -160,8 +176,7 @@ Language: en</code></pre><div class="local-badge"><span aria-hidden="true">⌁</
     <section class="principles wrap" aria-label="Principles behind the skill"><article><span class="principle-icon" aria-hidden="true">↳</span><h3>Sources before sentences.</h3><p>At least three sources, with facts, scenes, numbers, and quotes. Research records the strongest objection and what the material cannot answer.</p></article><article><span class="principle-icon" aria-hidden="true">Ⅲ</span><h3>Revise the flawed spans.</h3><p>An editor identifies what needs work. Each flawed span gets three alternatives or a reason to keep it. Structure comes before sentence polish.</p></article><article><span class="principle-icon" aria-hidden="true">↻</span><h3>The memory test.</h3><p>A fresh reader outlines the draft from memory and reports where they got lost or would have stopped. A second reading checks the finished essay.</p></article></section>
     </div>
 
-    <section class="install" id="install" aria-labelledby="install-title"><div class="wrap install-grid"><div><div class="eyebrow">04 — START WITH A QUESTION</div><h2 id="install-title">Less instant text.<br>More <em>considered thought.</em></h2><p>Install the skill, open Claude Code, and ask your first question. The process starts there.</p><div class="requirements"><span>WHAT YOU'LL NEED</span><a href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener noreferrer">Claude Code ↗</a><a href="https://docs.astral.sh/uv/" target="_blank" rel="noopener noreferrer">uv · Python 3.11+ ↗</a><a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">Node.js 18+ · npm only ↗</a></div></div><div class="install-card"><div class="install-tabs" role="tablist" aria-label="Installation method"><button role="tab" id="install-git" aria-selected="true" aria-controls="install-panel" data-install="git">Git <span class="soon-badge">current</span></button><button role="tab" id="install-npm" aria-selected="false" aria-controls="install-panel" tabindex="-1" data-install="npm">npm <span class="soon-badge" id="npm-release-status">v0.1.0</span></button><button role="tab" id="install-npx" aria-selected="false" aria-controls="install-panel" tabindex="-1" data-install="npx">npx</button></div><div id="install-panel" role="tabpanel" aria-labelledby="install-git" tabindex="0"><div class="install-label"><span id="install-label">01 / INSTALL THE SKILL</span><button class="copy-button" id="copy-install" type="button" aria-label="Copy installation command">Copy <span aria-hidden="true">⧉</span></button></div><pre class="install-command"><code id="install-command">git clone https://github.com/lucasbabur/jp-essay ~/.claude/skills/jp-essay &amp;&amp;
-~/.claude/skills/jp-essay/install.sh</code></pre><p class="install-status" id="install-status" role="status">Installs the current general and scientific skills. Start a new Claude Code session after installation.</p><div class="install-label usage-label"><span>02 / IN CLAUDE CODE</span><button class="copy-button" id="copy-usage" type="button" aria-label="Copy usage example">Copy <span aria-hidden="true">⧉</span></button></div><pre class="usage-command"><code id="usage-command">/jp-essay What makes an argument convincing? 1500 en</code></pre><p class="command-hint">Question · word count · language<br><span>Word count and language are optional. For citations, use /jp-essay-scientific with a citation style such as APA.</span></p></div></div></div></section>
+    <section class="install" id="install" aria-labelledby="install-title"><div class="wrap install-grid"><div><div class="eyebrow">04 — START WITH A QUESTION</div><h2 id="install-title">Less instant text.<br>More <em>considered thought.</em></h2><p>Install the skill, open Claude Code, and ask your first question. The process starts there.</p><div class="requirements"><span>WHAT YOU'LL NEED</span><a href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener noreferrer">Claude Code ↗</a><a href="https://docs.astral.sh/uv/" target="_blank" rel="noopener noreferrer">uv · Python 3.11+ ↗</a><a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">Node.js 18+ ↗</a></div></div><div class="install-card"><div class="install-tabs" role="tablist" aria-label="Installation method"><button role="tab" id="install-npx" aria-selected="true" aria-controls="install-panel" data-install="npx">npx <span class="soon-badge">recommended</span></button><button role="tab" id="install-npm" aria-selected="false" aria-controls="install-panel" tabindex="-1" data-install="npm">npm</button><button role="tab" id="install-git" aria-selected="false" aria-controls="install-panel" tabindex="-1" data-install="git">Git</button></div><div id="install-panel" role="tabpanel" aria-labelledby="install-npx" tabindex="0"><div class="install-label"><span id="install-label">01 / INSTALL THE SKILL</span><button class="copy-button" id="copy-install" type="button" aria-label="Copy installation command">Copy <span aria-hidden="true">⧉</span></button></div><pre class="install-command"><code id="install-command">npx jp-essay@latest</code></pre><p class="install-status" id="install-status" role="status">Copies /jp-essay and /jp-essay-scientific into ~/.claude/skills. Start a new Claude Code session afterwards.</p><div class="install-label usage-label"><span>02 / IN CLAUDE CODE</span><button class="copy-button" id="copy-usage" type="button" aria-label="Copy usage example">Copy <span aria-hidden="true">⧉</span></button></div><pre class="usage-command"><code id="usage-command">/jp-essay What makes an argument convincing? 1500 en</code></pre><p class="command-hint">Question · word count · language<br><span>Word count and language are optional. For citations, use /jp-essay-scientific with a citation style such as APA.</span></p></div></div></div></section>
 
   </main>
 
