@@ -152,6 +152,17 @@ Publishing a GitHub release publishes the package to npm (`.github/workflows/pub
 
 The website, [jpessay.com](https://jpessay.com/), is `landing/`, deployed on Vercel. Preview it with `python3 -m http.server -d landing 8774 --bind 127.0.0.1`.
 
+Clarity traffic attribution uses explicit UTMs first, then the referring domain, and retains the entry source across internal pages for 30 minutes of inactivity. Filter by the native UTM Source/Medium/Campaign fields or the custom tags `traffic_source`, `traffic_medium`, `traffic_campaign`, and `attribution_method`. Custom tags also cover recognized referrals without UTMs. Missing referrers are labeled `direct_or_unknown`; Google search referrals are labeled `google` / `organic`. Organic search links do not need UTMs. Use these links for posts:
+
+| Platform | Link |
+| --- | --- |
+| Reddit | https://jpessay.com/?utm_source=reddit&utm_medium=social&utm_campaign=jp_essay |
+| X | https://jpessay.com/?utm_source=x&utm_medium=social&utm_campaign=jp_essay |
+| Bluesky | https://jpessay.com/?utm_source=bluesky&utm_medium=social&utm_campaign=jp_essay |
+| DEV.to | https://jpessay.com/?utm_source=devto&utm_medium=referral&utm_campaign=jp_essay |
+
+These links work with Clarity after the tracking branch is deployed. For a local tracking test, open `http://127.0.0.1:8774/?clarity=1&utm_source=reddit&utm_medium=social&utm_campaign=jp_essay`. Local tests are tagged `environment=local_test`; plain local previews and hosted preview deployments do not collect data. Use `?clarity=0` to stop local collection in the current tab.
+
 ## Credits
 
 The process follows Jordan B. Peterson's [Writing Guide](https://essay.app/guide), adapted for a model. The adaptations draw on [Chakrabarty et al. (CHI 2025)](https://arxiv.org/abs/2409.14509) on how editors fix model prose, [STORM](https://arxiv.org/abs/2402.14207) on perspective-driven research, and [AI-Slop to AI-Polish](https://arxiv.org/abs/2504.07532) on why models can't grade writing. The style rules draw on Steven Pinker's classic style, Paul Graham's essays on writing, George Orwell's six rules and ASD-STE100's one-word-per-meaning rule. The tells draw on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), [humanizer](https://github.com/blader/humanizer) and [stop-slop](https://github.com/hardikpandya/stop-slop). This project is independent and is not affiliated with or endorsed by any of them. The icon is an abstract figure, not a portrait of anyone.
