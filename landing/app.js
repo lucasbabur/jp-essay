@@ -396,6 +396,15 @@ async function copy(id) {
   try {
     if (!navigator.clipboard) throw new Error('Clipboard unavailable');
     await navigator.clipboard.writeText(value);
+    if (id === 'usage-command') {
+      window.clarity?.('event', 'usage_command_copied');
+    } else {
+      const method = id === 'hero-install-command'
+        ? 'npm' : document.querySelector('[data-install][aria-selected="true"]').dataset.install;
+      window.clarity?.('set', 'install_method', method);
+      window.clarity?.('set', 'install_copy_location', id === 'hero-install-command' ? 'hero' : 'install_section');
+      window.clarity?.('event', 'install_command_copied');
+    }
     notify('Command copied.');
   } catch {
     const selection = window.getSelection();
