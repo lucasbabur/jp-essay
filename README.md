@@ -170,3 +170,5 @@ The process follows Jordan B. Peterson's [Writing Guide](https://essay.app/guide
 ## License
 
 [MIT](LICENSE)
+
+X in-app visits without a referrer can be inferred from explicit `Twitter for iPhone/` or `TwitterAndroid/` user-agent tokens. These use `traffic_source=x`, `traffic_medium=social`, and `attribution_method=app_user_agent`. Explicit UTMs, referrals, and a known session entry source take priority. This identifies the app context, not a specific post; ordinary Safari/Chrome visits without source signals remain unknown. Observed token examples: https://roboin.io/article/en/2026/09/19/x-in-app-browser-user-agent-string/

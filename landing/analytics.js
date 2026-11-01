@@ -81,6 +81,13 @@
       if (saved && Date.now() - saved.capturedAt < 30 * 60 * 1000) attribution = saved;
     }
   } catch (_) {}
+  // Infer the channel only from explicit X app tokens, never from the device alone.
+  // Preserve UTMs, external referrals and a previously known entry source.
+  const xApp = /(?:^|\s)(?:Twitter for iPhone|TwitterAndroid)\/\d[^\s]*(?:\s|$)/i
+    .test(typeof navigator === 'undefined' ? '' : navigator.userAgent || '');
+  if (xApp && (!attribution || attribution.source === 'direct_or_unknown')) {
+    attribution = { source: 'x', medium: 'social', campaign: '', method: 'app_user_agent' };
+  }
   attribution = attribution || { source: 'direct_or_unknown', medium: 'none', campaign: '', method: 'unknown' };
   attribution.capturedAt = Date.now();
   try { sessionStorage.setItem('clarity_attribution', JSON.stringify(attribution)); } catch (_) {}
